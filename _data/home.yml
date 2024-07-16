@@ -1,39 +1,18 @@
 navbar_entries:
-  - title: about
+  - title: About
     url: about
 
-  - title: blog
+  - title: Blog
     url: blog
 
-  - title: website
-    url: https://www.abhinav.co
-
 project_entries:
-  - title: Project 1
-    url: overview-post
-    desc: This is an example project, configured in _data/home.yml
+  - title: Gosu MRuby Wrapper
+    url: https://github.com/Chadowo/gosu-mruby-wrapper
+    desc: Wrapper around Gosu and MRuby to run Gosu games natively on desktop platforms.
 
-  - title: Project 2
-    url: overview-post
-    desc: Projects are shown in card layout
-
-  - title: Project 3
-    url: overview-post
-    desc: You can control visibility from _config.yml file
-
-  - title: Project 4
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
-    highlight: WIP
-
-  - title: Project 5
-    url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
-    highlight: WIP
-
-  - title: Project 6
-    url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
+  - title: AniRuby
+    url: https://github.com/Chadowo/aniruby
+    desc: Create sprite animations on Gosu, simply and easily.
 
 old_project_entries:
   - title: Soopr
@@ -54,16 +33,16 @@ old_project_entries:
     desc: The better people know you, the better they collaborate
 
 footer_entries:
-  - title: abhinav's homepage
-    url: https://www.abhinav.co
+  - title: GitHub
+    url: https://github.com/chadowo
 
-  - title: twitter
-    url: https://twitter.com/abhinav
+  - title: GitLab
+    url: https://gitlab.com/chadowo
 
-  - title: github
-    url: https://github.com/abhinavs
+  - title: itch.io
+    url: https:chadow.itch.io/
 
-  - title: feed
+  - title: Feed
     url: feed.xml
 
 misc_entries:
