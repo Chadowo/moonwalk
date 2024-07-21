@@ -2,8 +2,10 @@
   {% for item in include.collection %}
 
     <li class="card">
-      <a href="{{ item.url }}">
         <span class="header">
+	  {% if item.icon != nil %}
+	  <img src="./assets/images/projects/{{ item.icon }}.png" width="64" height="64">
+	  {% endif %}
           {{ item.title }}
 
           {% if item.highlight %}
@@ -19,7 +21,33 @@
           {{ item.desc }}
         </p>
         {% endif %}
-      </a>
+
+	<!-- Create icons that hyperlink to the projects URL if any -->
+	<span class="links">
+	  {% if item.github != nil %}
+	  <a style="display: contents" href="{{ item.github }}">
+	    <img class="link" src="./assets/images/github.svg" width="16" height="16"/>
+	  </a>
+	  {% endif %}
+
+	  {% if item.gitlab != nil %}
+	  <a style="display: contents" href="{{ item.gitlab }}">
+	    <img class="link" src="./assets/images/gitlab.svg" width="16" height="16"/>
+	  </a>
+	  {% endif %}
+
+	  {% if item.itchio != nil %}
+	  <a style="display: contents" href="{{ item.itchio }}">
+	    <img class="link" src="./assets/images/itch.svg" width="16" height="16"/>
+	  </a>
+	  {% endif %}
+
+	  {% if item.gamejolt != nil %}
+  	  <a style="display: contents" href="{{ item.gamejolt }}">
+	    <img class="link" src="./assets/images/gamejolt.svg" width="16" height="16"/>
+	  </a>
+	  {% endif %}
+	</span>
     </li>
 
   {% endfor %}

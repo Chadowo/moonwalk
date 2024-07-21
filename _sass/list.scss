@@ -28,6 +28,7 @@ ul.horizontal-list {
   background-color: var(--bg-secondary);
   margin-bottom: 0.8em;
   border-radius: 0.5em;
+  position: relative;
 
   .header {
     color: var(--links);
@@ -41,6 +42,28 @@ ul.horizontal-list {
     margin: 0.5em 0;
   }
 
+  /* TODO: Make it so the links are always at the bottom of the card, not below the body */
+  .links {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .link {
+    margin: 15px 5px 10px 5px;
+  }
+
+  .link:hover {
+    animation: .3s ease-in-out both color-change;
+  }
+}
+
+@keyframes color-change {
+  100% {
+    filter: drop-shadow(0px 0px 5px #eb3b3b);
+
+  }
 }
 
 /* Responsive cards - one column layout on small screens */

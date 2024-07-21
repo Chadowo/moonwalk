@@ -1,18 +1,25 @@
 navbar_entries:
-  - title: About
-    url: about
+  - title: Home
+    url: #
 
   - title: Blog
     url: blog
 
 project_entries:
+  - title: Asteritos
+    url: https://github.com/Chadowo/asteritos
+    icon: asteritos
+    desc: My entry for the 5th Gosu Game Jam.
+    github: https://github.com/Chadowo/asteritos
+    itchio: https://chadow.itch.io/asteritos
+    gamejolt: https://gamejolt.com/games/asteritos/880451
+
   - title: Gosu MRuby Wrapper
+    icon: gosu-mruby-wrapper
     url: https://github.com/Chadowo/gosu-mruby-wrapper
     desc: Wrapper around Gosu and MRuby to run Gosu games natively on desktop platforms.
-
-  - title: AniRuby
-    url: https://github.com/Chadowo/aniruby
-    desc: Create sprite animations on Gosu, simply and easily.
+    github: https://github.com/Chadowo/gosu-mruby-wrapper
+    gitlab: https://gitlab.com/Chadowo/gosu-mruby-wrapper
 
 old_project_entries:
   - title: Soopr
@@ -41,6 +48,9 @@ footer_entries:
 
   - title: itch.io
     url: https:chadow.itch.io/
+
+  - title: Game Jolt
+    url: https://gamejolt.com/@Chadowo
 
   - title: Feed
     url: feed.xml
